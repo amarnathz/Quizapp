@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+    <ViewFlipper
+
+        android:id="@+id/simpleViewFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@id/button"
+        android:background="#f0f4c3"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#3f51b5"
+                android:padding="25dp"
+                android:text="1.What is the newest version of Android?"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radiogrp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e8eaf6"
+
+
+                >
+
+                <RadioButton
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:onClick="radiofunc"
+                    android:text="Nougat"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:onClick="radiofunc"
+                    android:text="Oreo"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:onClick="radiofunc"
+                    android:text="Android P"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:onClick="radiofunc"
+                    android:text="Kit Kat"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            android:background="#283593">
+
+            <TextView
+                android:id="@+id/question2"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+
+                android:background="#ffffff"
+                android:padding="20dp"
+                android:text="2.________ is a command-line tool that dumps a log of system messages ,include stack traces?\n\n[after typing answer once again click on textbox to verified your answer]"
+                android:textColor="#3f51b5"
+                android:layout_margin="1dp"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/q2"
+                android:layout_below="@id/question2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:background="#e8eaf6"
+                android:ems="10"
+                android:padding="10dp"
+                android:layout_margin="20dp"
+                android:onClick="quesclick2"
+                />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e8eaf6"
+            android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#3f51b5"
+            android:padding="25dp"
+            android:text="3.Tick the correct unit for Density-independent pixel,pixel density,scaleable pixels?"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+            <CheckBox
+                android:onClick="quesclick3"
+                android:id="@+id/ques31"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:text="px"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:onClick="quesclick3"
+                android:id="@+id/ques32"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:text="em"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:onClick="quesclick3"
+                android:id="@+id/ques33"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:text="dp"
+                android:textSize="20sp"
+                />
+            <CheckBox
+                android:onClick="quesclick3"
+                android:id="@+id/ques34"
+                android:layout_width="match_parent"
+                android:layout_margin="20dp"
+                android:layout_height="wrap_content"
+                android:text="sp"
+                android:textSize="20sp"
+                />
+        </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3f51b5">
+
+    <ImageButton
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/pve"
+        android:scaleType="fitCenter"
+        android:padding="10dp"
+
+        android:layout_marginTop="20dp"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3f51b5"
+        android:padding="15dp"
+        android:text="4.Type the version name of android 9.0 [P_ _ c _ _ _]?\n "
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+    <EditText
+        android:onClick="quesclick4"
+        android:id="@+id/ques4"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:background="#e8eaf6"
+        android:ems="10"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+
+
+        />
+</LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#3f51b5"
+                android:padding="25dp"
+                android:text="5.Which are the base class for all interface elements ?"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <RadioGroup
+                android:id="@+id/radiogrp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#e8eaf6"
+
+
+                >
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:onClick="radiofunc1"
+                    android:text="Activities"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:onClick="radiofunc1"
+                    android:text="View"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:onClick="radiofunc1"
+                    android:text="Group"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_weight="1"
+                    android:onClick="radiofunc1"
+                    android:text="All the above"
+                    android:textSize="15sp" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+
+
+    </ViewFlipper>
+
+    <LinearLayout
+
+        android:id="@+id/button"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:background="#9c27b0"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/submitbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+
+            android:background="#43a047"
+
+            android:onClick="submitbutton"
+            android:text="submit"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/prebutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#43a047"
+
+            android:onClick="prefunc"
+            android:text="Previous"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/nextbutton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="#43a047"
+            android:onClick="nextfunc"
+            android:text="Next "
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
